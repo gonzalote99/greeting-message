@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>greeting message</title>
+
+  <script>
+     document.addEventListener("DOMContentLoaded", function listen() {
+       document.querySelector("form").addEventListener("submit", function greet() {
+         let name = document.querySelector("#name").value;
+         if (name == "") {
+           alert("type something");
+         }
+         else {
+          alert("hello, " + name + " !\n" + "nice day"  );
+        }
+        
+        
+       }
+       );
+     }
+      );
+    </script>
+</head>
+<body>
+  <form onsubmit="return false">
+   <input id="name" type="text" placeholder="Type name" autocomplete="off" autofocus>
+   <input id="button" type="submit" value="&#128512">
+  </form>
+  <footer >
+    <a href="https://github.com/gonzalote99" alt="gonzalote-github-link" target="_blank">@ me</a>
+  </footer>
+</body>
+</html>
